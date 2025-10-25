@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
-public class Board
+public class Board : MonoBehaviour
 {
     int row;
     int column;

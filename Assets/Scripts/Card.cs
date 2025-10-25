@@ -3,35 +3,14 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
-public class Card : MonoBehaviour
+[CreateAssetMenu(fileName = "New Card", menuName = "Card")]
+public class Card : ScriptableObject
 {
-    public bool hasBeenPlayed;
-    public int handIndex;
-    private GameManager gm;
-    public int power;
+
+    public string cardName;
+    public int points;
     public int pawnsNeeded;
-
-    private void OnMouseDown() {
-        if (hasBeenPlayed == false) {
-            transform.position += Vector3.up * 5;
-            hasBeenPlayed = true;
-            gm.availableCardSlots[handIndex] = true;
-            Invoke("MoveToDiscardPile", 2f);
-        }
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        gm = FindObjectOfType<GameManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    void MoveToDiscardPile() {
-        gm.discardPile.Add(this);
-        gameObject.SetActive(false);
-    }
+    public int spaceOccupied;
+    public int spaceForward;
+    public Texture2D cardImage;
 }
