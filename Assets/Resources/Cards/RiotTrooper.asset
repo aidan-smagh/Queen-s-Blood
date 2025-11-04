@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70e6be9b2327a8f4398920a4abe270da, type: 3}
-  m_Name: Grenadier
+  m_Name: RiotTrooper
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  cardName: Grendadier
-  points: 1
+  cardName: Riot Trooper
+  points: 3
   pawnsNeeded: 2
   spaceOccupied: 0
   spaceForward: 0
-  cardImage: {fileID: 2800000, guid: a70d5e2b120997e408b3ba67bf0fae33, type: 3}
+  cardImage: {fileID: 21300000, guid: ef5b4034cf85f194f98b6d1666a56a43, type: 3}

@@ -12,5 +12,5 @@ public class Card : ScriptableObject
     public int pawnsNeeded;
     public int spaceOccupied;
     public int spaceForward;
-    public Texture2D cardImage;
+    public Sprite cardImage;
 }
